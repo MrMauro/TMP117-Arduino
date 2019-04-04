@@ -209,7 +209,7 @@ uint16_t  TMP117::getDeviceRev (void) {
   // read bits [15:12]
   uint16_t raw = i2cRead2B( TMP117_REG_DEVICE_ID );
   
-  return ( (raw >> 12) & 0x3);
+  return ( (raw >> 12) & 0xF);
 }
 
 /*!
